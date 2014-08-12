@@ -10,5 +10,8 @@
       :area (schema/enum :techniques :tools :platforms :languages-and-frameworks)
       :url schema/Str})
 
+(defn remove-id [db-tech]
+  (dissoc db-tech :_id))
+
 (defn get-all-techs []
-  (mc/find-maps db coll))
+  (map remove-id (mc/find-maps db coll)))
