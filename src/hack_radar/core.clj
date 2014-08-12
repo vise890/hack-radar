@@ -1,7 +1,9 @@
 (ns hack-radar.core
-  (:require [compojure.core :refer :all]
-            [compojure.route :as route]))
+  (:require [hack-radar.db.tech]
+            [compojure.route :as route]
+            [compojure.core :refer :all]
+            [cheshire.core :refer :all]))
 
 (defroutes app
-  (GET "/" [] "<h1>Hello World</h1>")
+  (GET "/" [] "hello")
   (route/not-found "<h1>Page not found</h1>"))
