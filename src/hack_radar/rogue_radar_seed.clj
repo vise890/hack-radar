@@ -22,7 +22,7 @@
 
 (defn refresh-techs-db []
   (let [techs (scraper/scrape-tw-tech-radar)]
-  (do (drop-db)
-      (init-db techs))))
+       (drop-db)
+       (init-db techs)))
 
 (refresh-techs-db)

@@ -12,8 +12,7 @@
 
 ;; [] -> [<tech-html>]
 (defn- get-tech-htmls []
-  (-> (tech-radar-page)
-      (select [:body :div.a-z-links :ul :li.blip])))
+  (select (tech-radar-page) [:body :div.a-z-links :ul :li.blip]))
 
 (defn- get-url [tech-content]
   (let [slug (-> tech-content
