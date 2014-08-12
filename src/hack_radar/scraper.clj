@@ -5,14 +5,14 @@
             [hack-radar.tech-schema :refer :all])
   (:import java.net.URL))
 
-(def tech-radar-page
+(defn- tech-radar-page []
   (-> "http://www.thoughtworks.com/radar/a-z"
       URL.
       html-resource))
 
 ;; [] -> [<tech-html>]
 (defn- get-tech-htmls []
-  (-> tech-radar-page
+  (-> (tech-radar-page)
       (select [:body :div.a-z-links :ul :li.blip])))
 
 (defn- get-url [tech-content]
