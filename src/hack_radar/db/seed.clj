@@ -1,4 +1,4 @@
-(ns hack-radar.rogue-radar-seed
+(ns hack-radar.db.seed
   (:require [hack-radar.scraper :as scraper]
             [hack-radar.db.core :as db]
             [monger.collection :as mc]

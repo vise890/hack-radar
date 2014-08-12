@@ -1,6 +1,6 @@
 (ns hack-radar.scraper
   (:require [clojure.string :as s]
-            [hack-radar.tech-schema :refer :all]
+            [hack-radar.db.tech :refer :all]
             [net.cgrand.enlive-html :refer :all]
             [schema.core :as schema])
   (:import (java.net URL)))

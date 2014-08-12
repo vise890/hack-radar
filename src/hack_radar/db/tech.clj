@@ -1,4 +1,4 @@
-(ns hack-radar.tech-schema
+(ns hack-radar.db.tech
   (:require [schema.core :as schema]))
 
 (def Tech
