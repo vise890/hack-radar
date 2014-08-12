@@ -8,9 +8,9 @@
       :area (schema/enum :techniques :tools :platforms :languages-and-frameworks)
       :url schema/Str})
 
-;; FIXME: move to tests (and make a bit less ridiculous)
+;; FIXME: move to tests (and make a bit less ridiculous by adding test cases)
 (schema/validate Tech {:name "UltraTech"
-                  :status :adopt
-                  :area :techniques
-                  :url "www.foo.com"})
+                       :status :adopt
+                       :area :techniques
+                       :url "www.foo.com"})
 
