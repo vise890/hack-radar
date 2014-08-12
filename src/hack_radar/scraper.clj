@@ -1,6 +1,6 @@
 (ns hack-radar.scraper
   (:require [clojure.string :as s]
-            [hack-radar.db.tech :refer :all]
+            [hack-radar.db.tech :refer [Tech]]
             [net.cgrand.enlive-html :refer :all]
             [schema.core :as schema])
   (:import (java.net URL)))
@@ -55,5 +55,3 @@
 ;; [] -> [Tech]
 (defn scrape-tw-tech-radar []
   (map techify-html (get-tech-htmls)))
-
-(scrape-tw-tech-radar)
