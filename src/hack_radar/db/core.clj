@@ -7,7 +7,7 @@
 ;;;       this PJ is for trying new tech out
 
 (def db-name "rogueRadar")
-(def coll-name "techs")
+(def coll "techs")
 
 (def conn (mg/connect))
 (def db (mg/get-db conn db-name))
@@ -17,4 +17,4 @@
 
 (defn init-db []
   (do (drop-db)
-      (mc/create db coll-name {})))
+      (mc/create db coll {})))

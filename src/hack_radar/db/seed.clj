@@ -7,6 +7,6 @@
 (defn refresh-techs-db []
   (let [techs (scraper/scrape-tw-tech-radar)]
        (db/init-db)
-       (mc/insert-batch db/db db/coll-name techs)))
+       (mc/insert-batch db/db db/coll techs)))
 
 (refresh-techs-db)
