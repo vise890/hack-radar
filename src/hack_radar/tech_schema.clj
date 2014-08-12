@@ -1,5 +1,5 @@
 (ns hack-radar.tech-schema
-    (:require [schema.core :as schema]))
+  (:require [schema.core :as schema]))
 
 (def Tech
      "A tech in the TW radar"
@@ -13,4 +13,3 @@
                        :status :adopt
                        :area :techniques
                        :url "www.foo.com"})
-

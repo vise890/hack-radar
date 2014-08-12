@@ -1,9 +1,9 @@
 (ns hack-radar.scraper
   (:require [clojure.string :as s]
-            [schema.core :as schema]
+            [hack-radar.tech-schema :refer :all]
             [net.cgrand.enlive-html :refer :all]
-            [hack-radar.tech-schema :refer :all])
-  (:import java.net.URL))
+            [schema.core :as schema])
+  (:import (java.net URL)))
 
 (defn- tech-radar-page []
   (-> "http://www.thoughtworks.com/radar/a-z"

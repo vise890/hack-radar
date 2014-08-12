@@ -1,7 +1,7 @@
 (ns hack-radar.rogue-radar-seed
   (:require [hack-radar.scraper :as scraper]
-            [monger.core :as mg]
-            [monger.collection :as mc]))
+            [monger.collection :as mc]
+            [monger.core :as mg]))
 
 ;;; NOTE: a SQL db would have prb worked as well if not better
 ;;; NOTE: using h2 would have removed the *massive* dep on mongo, but oh well
