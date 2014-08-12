@@ -1,7 +1,7 @@
 (ns hack-radar.db.tech
-  (:require [schema.core :as schema]
+  (:require [hack-radar.db.core :refer [coll db]]
             [monger.collection :as mc]
-            [hack-radar.db.core :refer [db coll]]))
+            [schema.core :as schema]))
 
 (def Tech
      "A tech in the TW radar"
