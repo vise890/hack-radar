@@ -1,6 +1,5 @@
 (ns hack-radar.db.tech
   (:require [hack-radar.db.core :refer [coll db]]
-            [monger.collection :as mc]
             [monger.query :as mq]
             [schema.core :as schema]))
 

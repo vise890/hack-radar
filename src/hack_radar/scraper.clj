@@ -1,8 +1,8 @@
 (ns hack-radar.scraper
-  (:require [clojure.string :as s]
+  (:require [clj-time.format :as f]
+            [clojure.string :as s]
             [hack-radar.db.tech :refer [Tech]]
             [net.cgrand.enlive-html :refer :all]
-            [clj-time.format :as f]
             [schema.core :as schema])
   (:import (java.net URL)))
 
@@ -64,7 +64,7 @@
              :area (get-area tech-content)
              :date (get-date tech-content)
              :url (get-url tech-content)}]
-    (schema/validate Tech tech)))
+       (schema/validate Tech tech)))
 
 ;; [] -> [Tech]
 (defn scrape-tw-tech-radar []
