@@ -1,3 +1,3 @@
 
-x (A) get date
-x (B) sort by date
+
+(A) lein task to seed database
