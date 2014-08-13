@@ -8,4 +8,5 @@
        (db/init-db)
        (mc/insert-batch db/db db/coll techs)))
 
+;; FIXME: this should be a lein task
 (refresh-techs-db)

@@ -69,5 +69,3 @@
 ;; [] -> [Tech]
 (defn scrape-tw-tech-radar []
   (map techify-html (get-tech-htmls)))
-
-(scrape-tw-tech-radar)
