@@ -6,6 +6,8 @@
 
   :dependencies [[org.clojure/clojure "1.6.0"]
 
+                 [clj-time "0.8.0"]
+
                  [enlive "1.1.5"]
 
                  [com.novemberain/monger "2.0.0"]
