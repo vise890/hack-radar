@@ -12,5 +12,6 @@
 (defroutes app
   (GET "/" [] (json-response (get-all-techs)))
   (GET "/:area" [area] (json-response (get-techs {:area area})))
+  (GET "/:status" [status] (json-response (get-techs {:status status})))
   (GET "/:area/:status" [area status] (json-response (get-techs {:area area, :status status})))
   (route/not-found "<h1>Page not found</h1>"))
