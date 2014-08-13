@@ -6,7 +6,7 @@
 ;;; NOTE: using h2 would have removed the *massive* dep on mongo, but oh well
 ;;;       this PJ is for trying new tech out
 
-(def db-name "rogueRadar")
+(def db-name "hackRadar")
 (def coll "techs")
 
 (def conn (mg/connect))
