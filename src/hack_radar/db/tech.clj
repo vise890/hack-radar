@@ -13,5 +13,9 @@
 (defn remove-id [db-tech]
   (dissoc db-tech :_id))
 
+(defn get-techs [query]
+  (map remove-id (mc/find-maps db coll query)))
+
 (defn get-all-techs []
-  (map remove-id (mc/find-maps db coll)))
+  (get-techs {}))
+
