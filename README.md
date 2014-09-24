@@ -22,7 +22,7 @@ After you start ring, you can:
 ```
 GET /                # show all the techs
 GET /:area           # show all the techs in :area
-GET /:status         # show all the techs in a :status
+GET /on/:status         # show all the techs in a :status
 GET /:area/:status   # ... you get the picture
 ```
 Where the parameters `:area` and `:status` can be any of:
